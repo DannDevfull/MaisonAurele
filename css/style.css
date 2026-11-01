@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --Plano-fundo: #1C1C1E;
+    --Cor-primária: #E34F65;
+    --Cor-secundária: #F5F1E8;
+    --Destaque: #C9A227;
+    --Texto: #F5F1E8;
+    --Font-cormorant:"Cormorant Garamond", serif;
+    --Font-Montserrat:"Montserrat", sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    /* Defininfo em minha página HTML um rolagem suave */
+}
+
+body{
+    background-color: var(--Plano-fundo);
+    color: var(--Texto);
+    font-family: var(--Font-Montserrat);
+ 
+    
+    & header{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+
+
+            & .logoName{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                & img{
+                    max-width: 10%;
+                    height: auto;
+                }
+
+                & .namerestaurant{
+                    
+                        & h1{
+                            font-family: var(--Font-cormorant);
+                            font-weight: 500;
+                            font-size: 32px;
+                            min-width: 260px;
+                            text-align: center;
+                        }
+
+                        & .p-custom{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            min-width: 260px;
+
+                            & .line{
+                                height: 1px;
+                                width: 10%;
+                                background-color: var(--Destaque);
+                            }
+
+                            & p{
+                                font-family:var(--Font-cormorant);
+                                font-size: 12px;
+                                font-weight: normal;
+                                text-align: center;
+                                color: var(--Destaque);
+                            }
+                        }
+                }
+            }
+
+            & .navbar{
+                display: flex;
+                align-items: center;
+                min-width: 56%;
+
+                & ul{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: end;
+                    width: 100%;
+                    gap: 42px;
+
+                    & li{
+                        text-align: center;
+                        font-size: 14px;
+                        font-weight: normal;
+
+
+                        & a{
+                            color: var(--Texto);
+                        }
+                            & a:hover{
+                                color: var(--Cor-primária);
+                                transform: translateY(-4px);
+                                transition: 0.5 ease;
+                            }
+
+                        & #atualPag{
+                            color: var(--Cor-primária);
+                        }
+
+                        
+                    }
+                }
+                
+            }
+    }
+
+    & main{
+        width: 100%;
+        margin: auto;
+
+        & .hero {
+            margin-top:70px;
+            height: 500px;
+            width: 100%;
+            background: url('../IMGs/ambientacao.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center -350px;
+        }
+
+     /* Estilizações pré-definidas */
+        & section{
+            width: 75%;
+            margin: auto;
+            margin-top: 245px;
+        }
+        & section .heading{
+                     display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                    
+                        & h2{
+                            font-family: var(--Font-cormorant);
+                            color: var(--Cor-primária);
+                            font-size: 64px;
+                            margin-bottom: 22px;
+                        }
+
+                        & .line{
+                            height: 6px;
+                            width: 100px;
+                            border-radius: 50px;
+                            background-color: var(--Cor-primária);
+                            margin-bottom: 22px;
+                        }
+
+                        & p{
+                            font-family: var(--Font-Montserrat);
+                            font-size: 14px;
+                            font-weight: 100;
+                            margin-bottom: 50px;
+                        }
+        }
+        
+    /* Aqui começam algums estelizações específicas */
+        & .destaque{
+
+            display: flex;
+            flex-direction: column;
+
+                & .cards{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    justify-content: center;
+                    column-gap: 50px;
+                    row-gap: 46px;
+                    
+                    & div img{
+                        width: 100%;
+                        border-radius: 30px;
+                    }
+
+                    & #img2{
+                       align-self: center;
+                    }
+
+                    & #img3 h3{
+                        font-family: var(--Font-cormorant);
+                        color: var(--Cor-primária);
+                        font-size: 32px;
+                        margin-bottom: 22px;
+                       
+                    }
+
+                    & .txt4{
+                        display: flex;
+                        flex-direction: column;
+                        align-self: center;
+
+                            & h4{
+                                font-family: var(--Font-cormorant);
+                                font-size: 22px;
+                                color: var(--Cor-primária);
+                                margin-bottom: 16px;
+                            }
+                            
+                            & p{
+                                font-size: 14px;
+                                font-weight: 200;
+                                line-height: 28px;
+                                letter-spacing: 10%;
+                                margin-bottom: 40px;
+                            }
+
+
+                        & .row{
+                            display: flex;
+                            flex-direction: row;
+                            gap: 14px;
+
+                            & p{
+                                font-size: 20px;
+                            }
+
+                            & img{
+                                width: 6%;
+                            }
+                        }
+                        
+                    }
+                    
+
+
+                }
+        }
+
+        & .about .descrição{
+            display: flex;
+            gap: 120px;
+
+
+            & .sub-desc{
+                width: 30%;
+
+                & h3{
+                    font-family: var(--Font-cormorant);
+                    color: var(--Cor-primária);
+                    font-size: 32px;
+                    margin-bottom: 52px;
+                }
+
+                & p{
+                  font-size: 14px;
+                  font-weight: 200;
+                  line-height: 34px;
+                  letter-spacing: 10%;  
+                }
+            }
+
+            & .card {
+                width: 60%;
+
+                & img{
+                    width: 100%;
+                }
+            }
+         
+           
+        }
+
+        & .brevecardapio {
+            
+            & .fourcards{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin-top: 100px;
+                column-gap: 200px;
+                row-gap: 80px;
+            
+                & .cards img{
+                    width: 100%; 
+                    border-radius: 30px;
+                }
+
+                &  h3{
+                    font-family: var(--Font-cormorant);
+                    margin-top: 24px ;
+                    margin-bottom: 20px;
+                }
+
+                & .t-descrição{
+                        font-size:12px;
+                        font-weight: 200;
+                        margin-bottom: 20px;
+                    }
+
+                & p{
+                    font-weight: 300;
+                }
+
+
+            }
+            
+            & .link{
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+
+                & .sub-link{
+                    text-align: center;
+                    width: 50%;
+                    border: 1px solid var(--Destaque);
+                    border-radius: 24px;
+                    padding: 25px 15px;
+                    transition: 0.5 ease;
+                    cursor: pointer;
+                    
+                }
+
+
+                 & a{
+                    color: var(--Texto);
+                  
+                }
+
+                & .sub-link:hover{
+                    border: 2px solid var(--Cor-secundária);
+                    transform: translateY(-10px);
+
+                    & a:hover{
+                        color: var(--Cor-primária);
+                    }
+                }
+
+               
+
+                
+            }
+        }
+
+    }
+
+    & footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        margin-top: 300px;
+        border-top: 1px solid var(--Cor-primária);
+       
+
+        & .logoName{
+            display: flex;
+            align-items: center;
+            width: 48%;
+            gap: 14px;
+             padding: 20px;
+
+            & h1{
+                font-family: var(--Font-cormorant);
+                font-size: 36px;
+                text-align: center;
+            }
+
+            & .p-custom{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                & .line{
+                    height: 1px;
+                    width: 10%;
+                    background-color: var(--Destaque);
+                }
+
+                & p{
+                    font-size: 12px;
+                    font-family: var(--Font-cormorant);
+                    font-weight: normal;
+                    text-align: center;
+                    color: var(--Destaque);
+                }
+            }
+            & img{
+                max-width: 10%;
+                height: auto;
+            }
+        }
+
+        & .direitos{
+            display: flex;
+            width: 50%;
+            align-items: end;
+            justify-content: center;
+            
+
+            & p{
+                width: 100%;
+                font-size: 10px;
+                font-weight: 100;
+            }
+        }
+
+        & .back{
+            display: flex;
+            align-items: center;
+            width: 25%;
+            cursor: pointer;
+            transition: 0.5 ease;
+
+            & a{
+                color: var(--Texto);
+            }
+        }
+
+        & a:hover{
+            color: var(--Cor-primária);
+            text-decoration: underline;
+        }
+            
+
+    }
+}
