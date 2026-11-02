@@ -230,7 +230,7 @@ body{
                                 margin-bottom: 16px;
                             }
                             
-                            & p{
+                            & #sobreRestaurante{
                                 font-size: 14px;
                                 font-weight: 200;
                                 line-height: 28px;
@@ -483,26 +483,32 @@ body{
 /* Adicionando respondividade no site */
 @media (max-width: 960px){
 
-    #home  img,
-    footer .logoName #end img{
-        width: 8%;
-        height: auto;
+      header .logoName img,
+     footer .logoName .end img{
+        width: 50%;
+    }
+    header #home .namerestaurant,
+    footer .logoName .end .container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
     }
 
-    #home .namerestaurant h1,
-    body footer .logoName .end h1 {
-        font-size: 18px;
+    header #home .namerestaurant, #title1,
+    footer .logoName .end .container #sub-title1{
+        font-size:20px;
+        min-width: auto;
     }
-
-    #home .namerestaurant .p-custom #kitchen,
-    footer .logoName .end .container #div #kit-p {
-        font-size: 8px;
-   }
-
-   footer #copyR p{
     
-    font-size: 8px;
-   }
+    header #home .namerestaurant #text,
+    footer .logoName .end .container .p-custom {
+        width: 100%;
+        min-width: auto;
+        gap: 6px;
+    }
+    header #home .namerestaurant .p-custom #kitchen{
+        font-size: 8px;
+    }
 
 
     /* Reduzindo o tamanho dos H2 para telas menores (de 64px para 38px) */
@@ -545,6 +551,11 @@ body{
         }
    }
 
+   .destaque #column .txt4 .row #Us{
+    font-size: 12px;
+        
+   }
+
 
 
     /* Mostrando o botão hamburguer */
@@ -556,7 +567,7 @@ body{
     /* estilizando o botão */
     .hamburguer .bar{
         display: block;
-        width: 28px;
+        width: 26px;
         height: 3px;
         margin: 5px auto;
         background-color: var(--Texto);
@@ -595,7 +606,7 @@ body{
         justify-content: center;
         align-items: center;
         height: 100%;
-        gap: 35px;
+        gap: 30px;
     }
 
     #navbar ul li a{
@@ -626,16 +637,32 @@ body{
 }
 
 @media (max-width: 700px){
-    #home .namerestaurant #title1,
-    body footer .logoName #sub-title1 {
-        font-size: 16px;
-        min-width: auto;
+
+     header .logoName img,
+     footer .logoName .end img{
+        width: 50%;
+    }
+    header #home .namerestaurant,
+    footer .logoName .end .container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
     }
 
-    footer .logoName #end-1 img{
-        width: 16%;
-        height: auto;
-       
+    header #home .namerestaurant, #title1,
+    footer .logoName .end .container #sub-title1{
+        font-size:14px;
+        min-width: auto;
+    }
+    
+    header #home .namerestaurant #text,
+    footer .logoName .end .container .p-custom {
+        width: 100%;
+        min-width: auto;
+        gap: 6px;
+    }
+    header #home .namerestaurant .p-custom #kitchen{
+        font-size: 5px;
     }
 
    #home .namerestaurant .p-custom #kitchen,
@@ -655,6 +682,14 @@ body{
         }
     }
 
+     .hero::before{
+        font-size: 12px;
+    }
+
+
+    .brevecardapio .cardapio .titleN2{
+        font-size: 28px;
+    }
 
     .brevecardapio #ItensCard{
         display: flex;
@@ -698,31 +733,40 @@ body{
         }
     }
 
+     footer #copyR p{
+        font-size: 8px;
+    }
+
 
 }
 
 @media (max-width: 546px){
-    header .logoName img{
+    header .logoName img,
+    footer .logoName #end-1 img{
         width: 50%;
     }
-    header #home .namerestaurant {
+    header #home .namerestaurant,
+    footer .logoName .end .container {
        display: flex;
        flex-direction: column;
        align-items: center;
     }
 
-    header #home .namerestaurant, #title1{
-        font-size:14px;
+    header #home .namerestaurant, #title1,
+    footer .logoName .end .container #sub-title1{
+        font-size:10px;
         min-width: auto;
     }
     
-    header #home .namerestaurant #text {
+    header #home .namerestaurant #text,
+    footer .logoName .end .container .p-custom {
         width: 100%;
         min-width: auto;
         gap: 6px;
     }
-    header #home .namerestaurant .p-custom #kitchen{
-        font-size: 6px;
+    header #home .namerestaurant .p-custom #kitchen,
+    footer .logoName #end-1 .container .p-custom #kit-p{
+        font-size: 4px;
     }
 
     header #home .namerestaurant .p-custom .line{
@@ -734,4 +778,99 @@ body{
         flex: 1;
         height: 1px;
     }
+
+
+    #navbar ul li a{
+        font-size: 10px;
+    }
+    .hamburguer .bar {
+        width: 20px;
+    }
+
+    .hero::before{
+        font-size: 8px;
+    }
+
+    .destaque .heading{
+        & h2{
+            font-size: 28px;
+        }
+        & .line{
+            height: 6px;
+        }
+
+        & p{
+            font-size: 10px;
+        }
+    }
+    .destaque #column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destaque #column div{
+        width: 50%;
+    }
+
+    .destaque #column .txt4{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+
+        & h4{
+           text-align: center;
+        }
+        & #sobreRestaurante{
+            font-size: 10px;
+            text-align: justify;
+            line-height: 24px;
+        }
+
+        & .txt4-content{
+            width: 100%;
+        }
+
+        & .row{
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           align-items: center;
+
+        }
+    }
+
+    .about .heading{
+        & .titleN2{
+            font-size: 28px;
+        }
+
+        & #p{
+            font-size: 8px;
+        }
+    }
+
+    .about .path #desc{
+        & .titleN3{
+            font-size: 18px;
+        }
+
+        & #p-desc{
+            font-size: 8px;
+            line-height: 26px;
+        }
+    }
+
+    .brevecardapio .cardapio .titleN2{
+        font-size: 20px;
+    }
+
+    footer #copyR p{
+        font-size: 6px;
+    }
+
+    footer .back a{
+        font-size: 8px;
+    }
+
 }
