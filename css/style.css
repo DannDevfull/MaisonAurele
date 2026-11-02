@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
     --Plano-fundo: #1C1C1E;
-    --Cor-primária: #E34F65;
-    --Cor-secundária: #F5F1E8;
+    --Cor-primaria: #E34F65;
+    --Cor-secundaria: #F5F1E8;
     --Destaque: #C9A227;
     --Texto: #F5F1E8;
     --Font-cormorant:"Cormorant Garamond", serif;
@@ -21,7 +21,7 @@
 
 html{
     scroll-behavior: smooth;
-    /* Definindo em minha página HTML um rolagem suave */
+    /* Definindo em minha pÃ¡gina HTML um rolagem suave */
 }
 
 body{
@@ -104,13 +104,13 @@ body{
                             color: var(--Texto);
                         }
                             & a:hover{
-                                color: var(--Cor-primária);
+                                color: var(--Cor-primaria);
                                 transform: translateY(-4px);
                                 transition: 0.5 ease;
                             }
 
                         & #atualPag{
-                            color: var(--Cor-primária);
+                            color: var(--Cor-primaria);
                         }
 
                         
@@ -142,14 +142,14 @@ body{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                content: '"experiência gastronômica inesquecível em cada detalhe."';
+                content: '"experiência gastronômica inesquecí­vel em cada detalhe."';
                 position: absolute;
                 position: relative;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-color: rgba(0, 0, 0, 0.5); /* Fundo preto com 50% de transparência */
+                background-color: rgba(0, 0, 0, 0.5); /* Fundo preto com 50% de transpararência */
                 z-index: 1;
             }
 
@@ -167,7 +167,7 @@ body{
                     
                         & h2{
                             font-family: var(--Font-cormorant);
-                            color: var(--Cor-primária);
+                            color: var(--Cor-primaria);
                             font-size: 64px;
                             margin-bottom: 22px;
                         }
@@ -176,7 +176,7 @@ body{
                             height: 6px;
                             width: 100px;
                             border-radius: 50px;
-                            background-color: var(--Cor-primária);
+                            background-color: var(--Cor-primaria);
                             margin-bottom: 22px;
                         }
 
@@ -190,7 +190,7 @@ body{
     
         
 
-    /* Aqui começam algums estelizações específicas */
+    /* Aqui começam alguns estelizações especí­ficas */
 
         & .destaque{
 
@@ -212,7 +212,7 @@ body{
 
                     & #img3 h3{
                         font-family: var(--Font-cormorant);
-                        color: var(--Cor-primária);
+                        color: var(--Cor-primaria);
                         font-size: 32px;
                         margin-bottom: 22px;
                        
@@ -226,7 +226,7 @@ body{
                             & h4{
                                 font-family: var(--Font-cormorant);
                                 font-size: 22px;
-                                color: var(--Cor-primária);
+                                color: var(--Cor-primaria);
                                 margin-bottom: 16px;
                             }
                             
@@ -270,7 +270,7 @@ body{
 
                 & h3{
                     font-family: var(--Font-cormorant);
-                    color: var(--Cor-primária);
+                    color: var(--Cor-primaria);
                     font-size: 32px;
                     margin-bottom: 52px;
                 }
@@ -351,11 +351,11 @@ body{
                 }
 
                 & .sub-link:hover{
-                    border: 2px solid var(--Cor-secundária);
+                    border: 2px solid var(--Cor-secundaria);
                     transform: translateY(-10px);
 
                     & a:hover{
-                        color: var(--Cor-primária);
+                        color: var(--Cor-primaria);
                     }
                 }
 
@@ -374,7 +374,7 @@ body{
         width: 90%;
         margin: auto;
         margin-top: 300px;
-        border-top: 1px solid var(--Cor-primária);
+        border-top: 1px solid var(--Cor-primaria);
        
         
         & .logoName{
@@ -383,7 +383,7 @@ body{
             align-items: center;
             width: 60%;
             gap: 14px;
-            padding: 20px 8px;
+            padding: 10px 8px;
 
                 & .end{
                     display: flex;
@@ -461,7 +461,7 @@ body{
         }
 
         & a:hover{
-            color: var(--Cor-primária);
+            color: var(--Cor-primaria);
             text-decoration: underline;
         }
             
@@ -469,7 +469,6 @@ body{
     }
 }
 
-/* No desktop, o botão fica escondido */
 .hamburguer{
     display: none;
     cursor: pointer;
@@ -558,13 +557,13 @@ body{
 
 
 
-    /* Mostrando o botão hamburguer */
+    /* Mostrando o botÃ£o hamburguer */
     .hamburguer{
         display: block;
         z-index: 100;
     }
 
-    /* estilizando o botão */
+    /* estilizando o botÃ£o */
     .hamburguer .bar{
         display: block;
         width: 26px;
@@ -615,7 +614,7 @@ body{
 
 
     /* 
-        Esse seletor serve para selecionar o primeiro filho de uma determinado   elemento pai -- aqui o elemento pai é o botão.
+        Esse seletor serve para selecionar o primeiro filho de uma determinado   elemento pai -- aqui o elemento pai é o botao.
         além disso, transformaremos as barrinhas do botão em um X.
     */
     
@@ -667,7 +666,7 @@ body{
 
    #home .namerestaurant .p-custom #kitchen,
    footer .logoName .end .container #div #kit-p {
-    font-size: 8px;
+    font-size: 6px;
    }
 
     & .responsive .path #desc{
@@ -773,7 +772,7 @@ body{
 
         /* 
             função da propriedade flex:
-            O texto do meio já ocupou o espaço dele. Os dois (risco esquerdo e direito) crescem e preenchem exatamente o que sobra da largura até dar a mesma largura do título 
+            O texto do meio já¡ ocupou o espaço dele. Os dois (risco esquerdo e direito) crescem e preenchem exatamente o que sobra da largura atÃ© dar a mesma largura do tí­tulo 
         */
         flex: 1;
         height: 1px;
@@ -873,4 +872,364 @@ body{
         font-size: 8px;
     }
 
+}
+
+@media (max-width: 390px){
+    /* --- CABEÇALHO & LOGO --- */
+    header {
+        width: 92%;
+        margin-top: 15px;
+    }
+
+    header .logoName {
+        gap: 8px;
+    }
+
+    header .logoName img {
+        width: 32px;
+        height: auto;
+    }
+
+    header #home .namerestaurant {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header #home .namerestaurant #title1 {
+        font-size: 10px;
+        min-width: unset;
+        text-align: center;
+    }
+
+    header #home .namerestaurant #text {
+        width: 100%;
+        min-width: unset;
+        gap: 6px;
+    }
+
+    header #home .namerestaurant .p-custom #kitchen {
+        font-size: 4px;
+        white-space: nowrap;
+    }
+
+    header #home .namerestaurant .p-custom .line {
+        flex: 1;
+        height: 1px;
+    }
+
+
+    .hero::before{
+        font-size: 4px;
+    }
+
+
+
+    /* --- MENU HAMBÚRGUER --- */
+    .hamburguer .bar {
+        width: 14px;
+        height: 2.5px;
+        margin: 4px auto;
+    }
+
+    .navbar {
+        width: 50%;
+    }
+
+    #navbar ul {
+        gap: 14px;
+    }
+
+    #navbar ul li a {
+        font-size: 8px;
+    }
+
+    /* --- SEÇÕES e HERO --- */
+    main section {
+        width: 90%;
+        margin-top: 70px;
+    }
+
+    body main .hero {
+        position: relative;
+        width: 100%;
+        height: 220px;
+        margin-top: 25px;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    body main .hero::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 4px;
+        text-align: center;
+        line-height: 1.5;
+        font-style: italic;
+    }
+
+    /* --- TÍTULOS DE SEÇÃO --- */
+    section .heading .titleN2 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    section .heading .line {
+        height: 4px;
+        width: 60px;
+        margin-bottom: 12px;
+    }
+
+    section .heading p,
+    .destaque .heading p,
+    .about .heading #p {
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+
+    /* --- DESTAQUES --- */
+    .destaque #column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .destaque #column div,
+    .destaque #column #img1,
+    .destaque #column #img2,
+    .destaque #column #img3 {
+        width: 50%;
+    }
+
+    .destaque #column div img {
+        width: 100%;
+        border-radius: 18px;
+    }
+
+    .destaque #column #img3 #titleN3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .destaque #column .txt4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destaque #column .txt4 h4#titleN4 {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .destaque #column .txt4 #sobreRestaurante {
+        font-size: 10px;
+        line-height: 22px;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .destaque #column .txt4 .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .destaque #column .txt4 .row img {
+        width: 8px;
+    }
+
+    .destaque #column .txt4 .row #Us {
+        font-size: 8px;
+        margin-bottom: 0;
+    }
+
+    /* --- SOBRE --- */
+    .about .descrição {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .about .descrição #desc {
+        width: 100%;
+    }
+
+    .about .descrição #desc .titleN3 {
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 14px;
+    }
+
+    .about .descrição #desc #p-desc {
+        font-size: 10px;
+        line-height: 22px;
+        text-align: justify;
+    }
+
+    .about .descrição #ImgTeam {
+        width: 75%;
+    }
+
+    .about .descrição #ImgTeam img {
+        width: 100%;
+        border-radius: 18px;
+    }
+
+    /* --- CARDÁPIO --- */
+    .brevecardapio .cardapio .titleN2 {
+        font-size: 18px;
+    }
+
+    .brevecardapio #ItensCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 35px;
+        margin-top: 30px;
+    }
+
+    .brevecardapio #ItensCard .cards {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .brevecardapio #ItensCard .cards img {
+        width: 100%;
+        height: auto;
+        border-radius: 18px;
+    }
+
+    .brevecardapio #ItensCard .cards h3 {
+        font-size: 14px;
+        margin-top: 14px;
+        margin-bottom: 6px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .brevecardapio #ItensCard .cards .t-descrição {
+        font-size: 8px;
+        line-height: 18px;
+        margin-bottom: 8px;
+        font-weight: 300;
+        width: 100%;
+        text-align: center;
+    }
+
+    .brevecardapio #ItensCard .cards p {
+        font-size: 10px;
+        font-weight: 500;
+        width: 100%;
+        text-align: center;
+    }
+
+    .brevecardapio .link {
+        margin-top: 30px;
+    }
+
+    .brevecardapio .link #linkMenu {
+        width: 80%;
+        padding: 10px 12px;
+        border-radius: 18px;
+    }
+
+    .brevecardapio .link #linkMenu a {
+        font-size: 10px;
+    }
+
+    /* --- RODAPÉ --- */
+    footer {
+        width: 90%;
+        margin-top: 70px;
+        padding: 14px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    footer .logoName {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .logoName #end-1 {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    footer .logoName #end-1 img {
+        width: 18%;
+        height: auto;
+    }
+
+    footer .logoName #end-1 .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .logoName #end-1 .container #sub-title1 {
+        font-size: 10px;
+        min-width: auto;
+        text-align: center;
+    }
+
+    footer .logoName #end-1 .container .p-custom {
+        width: 100%;
+        min-width: auto;
+        gap: 5px;
+    }
+
+    footer .logoName #end-1 .container .p-custom #kit-p {
+        font-size: 3px;
+        white-space: nowrap;
+    }
+
+    footer .logoName #end-1 .container .p-custom .line {
+        flex: 1;
+        height: 1px;
+    }
+
+    footer #copyR {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    footer #copyR p {
+        font-size: 4px;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer .back {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .back a {
+        font-size: 4px;
+    }
 }
