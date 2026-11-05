@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
+        <script type="module" src="src/app.js"></script>
+         <!-- O type="module" possibilita que o arquivo possa importar funções de outros arquivos  -->
+
         <title>Maison Aurèle - Projeto Demonstrativo</title>
     </head>
     <body>
@@ -33,16 +36,16 @@
 
             <nav class="navbar" id="navbar">
                 <ul>
-                    <li><a href="#" id="atualPag">Início</a></li>
-                    <li><a href="#about">Quem Somos</a></li>
-                    <li><a href="#menu">Cardápio</a></li>
-                    <li><a href="#gallery">Galeria</a></li>
-                    <li><a href="#contacts">Contatos</a></li>
+                    <li><a href="#home" id="atualPag" data-route-link="home" >Início</a></li>
+                    <li><a href="#about" data-route-link="about" >Sobre</a></li>
+                    <li><a href="#menu" data-route-link="menu" >Cardápio</a></li>
+                    <li><a href="#gallery" data-route-link="gallery" >Galeria</a></li>
+                    <li><a href="#contacts" data-route-link="contacts" >Contatos</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main>
+        <main id="app">
             <section class="hero">
             </section>
 
@@ -189,7 +192,7 @@
             </div>
            
 
-            <div class="back">
+            <div class="back" id="back-home">
                 <p><a href="#home">Voltar ao topo</a></p>
             </div>
 
