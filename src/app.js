@@ -39,11 +39,12 @@ function renderCurrentPage(){
     // Usando um operador ternário, verificamos se já exite uma página para a rota pedida. Existindo, use; se não, vá para "home"
     const route = pages[requestedRoute] ? requestedRoute : "home";
 
-    // Acessando o objeto
+    // Acessando o array
     const page = pages[route];
 
     // Renderizanod o conteúdo e exibindo no HTML
     app.innerHTML = page.render();
+    window.scrollTo({ top: 0, behavior: "smooth" });
 
     // Para cada página renderizada, quero que tenha o título e o nome do restaurante.
     document.title = `${page.title} | Maison Aurèle`;
@@ -73,6 +74,5 @@ renderCurrentPage();
 
 // criando um evento
 window.addEventListener("hashchange", renderCurrentPage);
-
 
 
