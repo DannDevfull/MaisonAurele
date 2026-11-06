@@ -12,7 +12,7 @@
     <body>
         <header>
             <div class="logoName" id="home">
-                <img src="IMGs/SVGs/logo.svg" alt="Logo do restaurante">
+                <img src="IMGs/SVGs/logo.svg" alt="Logo do restaurante" id="img-return">
                 <div class="namerestaurant">
                     <h1 id="title1">MAISON AURÈLE</h1>
                     
@@ -36,131 +36,17 @@
 
             <nav class="navbar" id="navbar">
                 <ul>
-                    <li><a href="#home" id="atualPag" data-route-link="home" >Início</a></li>
-                    <li><a href="#about" data-route-link="about" >Sobre</a></li>
-                    <li><a href="#menu" data-route-link="menu" >Cardápio</a></li>
-                    <li><a href="#gallery" data-route-link="gallery" >Galeria</a></li>
-                    <li><a href="#contacts" data-route-link="contacts" >Contatos</a></li>
+                    <li><a href="#/home" id="atualPag" data-route-link="home" >Início</a></li>
+                    <li><a href="#/about" data-route-link="about" >Sobre</a></li>
+                    <li><a href="#/menu" data-route-link="menu" >Cardápio</a></li>
+                    <li><a href="#/gallery" data-route-link="gallery" >Galeria</a></li>
+                    <li><a href="#/contacts" data-route-link="contacts" >Contatos</a></li>
                 </ul>
             </nav>
         </header>
 
         <main id="app">
-            <section class="hero">
-            </section>
-
-            <section class="destaque responsive">
-                <div class="heading">
-                    <h2 class="titleN2">Destaques</h2>
-                    <div class="line"></div>
-                    <p>Veja os Destaques desta semana</p>
-                </div>
-
-                <div class="cards path" id="column">
-                    <div id="img1">
-                        <img src="IMGs/fundo-principal.webp" alt="Imagens de prato com carne">
-                    </div>
-
-                    <div id="img2">
-                        <img src="IMGs/aperitivo.webp" alt="Imagem de aperitivos ppara degustar">
-                    </div>
-                    
-                        <div id="img3" class="div" >
-                            <h3 id="titleN3">Ambientação</h3>
-                            <img src="IMGs/plano-fundo.webp" alt="Ambientação interna de uma restaurante">
-                        </div>
-
-                        <article class="txt4">
-                            <div class="txt4-content">
-                                <h4 id="titleN4">Não nos conhece?</h4>
-                                <p id="sobreRestaurante">
-                                    Maison Aurèle é um restaurante de cozinha contemporânea que une técnica, ingredientes selecionados e um ambiente acolhedor. Cada prato é pensado para transformar uma refeição em uma experiência memorável, do primeiro olhar à última garfada.
-                                </p>
-                            </div>
-
-                            <div class="row">
-                                <img src="IMGs/SVGs/arrow.svg" alt="Seta curvada">
-                                <p id="Us">Conheça mais sobre nós</p>
-                            </div>
-                        </article>
-                </div>
-            </section>
-
-            <section class="about responsive">
-                <div class="sobreText heading">
-                    <h2 class="titleN2">Sobre</h2>
-                    <div class="line"></div>
-                    <p id="p">Vamos nos conhecer melhor!</p>
-                </div>
-                <div class="descrição path">
-                    <div class="sub-desc" id="desc">
-                        <h3 class="titleN3">MAISON AURÈLE</h3>
-                        <p id="p-desc">
-                            Maison Aurèle nasceu da convicção de que uma boa refeição vai além do alimento: é um encontro entre pessoas, memórias e sabores. Inspirado na tradição das casas francesas e na riqueza dos ingredientes brasileiros, o restaurante propõe uma cozinha contemporânea, elegante e sem excessos.
-                        </p>
-                    </div>
-
-                    <div class="card" id="ImgTeam">
-                        <img src="IMGs/team.webp" alt="Equipe de um restaurante">
-                    </div>
-                </div>
-            </section>
-
-            <section class="brevecardapio">
-                <div class="cardapio heading">
-                    <h2 class="titleN2">Alguns itens do Cardápio</h2>
-                    <div class="line"></div>
-                </div>
-
-                <div class="fourcards" id="ItensCard">
             
-                    <div class="cards" id="card-1">
-                        <img src="IMGs/Prato2Combo.webp" alt="Prato Combo" id="Img-1">
-                        <h3>Seleção Maison</h3>
-                        <p class="t-descrição">
-                            Combo de quatro bowls com proteínas grelhadas, arroz, legumes e acompanhamentos variados, servido em louça artesanal.
-                        </p>
-                        <p>R$ 139,90</p>
-                    </div>
-
-                    <div class="cards">
-                        <img src="IMGs/Prato1.webp" alt="Prato Tradicional" id="Img-2">
-                        
-                            <h3>Salmão Aurèle</h3>
-                            <p class="t-descrição">
-                                Filé de salmão selado sobre risoto cremoso de ervilha, cenouras glaceadas, brotos frescos e redução de balsâmico.
-                            </p>
-                            <p>R$ 89,00</p>
-                    </div>
-
-                    <div class="cards">
-                        <img src="IMGs/Prato4.webp" alt="Bife" id="Img-3">
-                        <h3>Bife Bordeaux</h3>
-                        <p class="t-descrição">
-                            Corte nobre com osso, grelhado e finalizado com redução de vinho tinto, acompanhado de brócolis e cenoura.
-                        </p>
-                        <p>R$ 124,90</p>
-                    </div>
-
-                    <div class="cards" id="Img-4">
-                        <img src="IMGs/Prato3.webp" alt="Pão torrado">
-                        <h3>Toast Rústico Maison</h3>
-                        <p class="t-descrição">
-                            Pão de fermentação natural tostado, recheio cremoso, pimentão assado e folhas de rúcula, servido sobre tábua de madeira.
-                        </p>
-                        <p>R$ 42,90</p>
-                    </div>
-
-                </div>
-
-                <div class="link">
-                    <div class="sub-link" id="linkMenu">
-                        <a href="#menu">
-                            Veja mais em nosso Cardápio
-                        </a>
-                    </div>
-                </div>
-            </section>
         </main>
 
         <footer>
@@ -193,7 +79,7 @@
            
 
             <div class="back" id="back-home">
-                <p><a href="#home">Voltar ao topo</a></p>
+                <p><a href="#">Voltar ao topo</a></p>
             </div>
 
         </footer>

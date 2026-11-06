@@ -1,6 +1,7 @@
 import { renderHomePage } from "./pages/home.js";
 import { renderAboutPage } from "./pages/about.js";
 import { renderMenuPage } from "./pages/menu.js";
+import { renderGalleryPage } from "./pages/gallery.js";
 
 const app = document.querySelector('#app');
 
@@ -9,6 +10,7 @@ const pages = {
     home: {title: "Início", render: renderHomePage},
     about: { title: "Quem Somos", render: renderAboutPage},
     menu: { title: "Cardápio", render:renderMenuPage},
+    gallery: { title: "Galeria", render:renderGalleryPage},
 };
 
 function getCurrentRoute(){
@@ -54,7 +56,14 @@ function renderCurrentPage(){
             link.removeAttribute("aria-current");
         }
     });
-    window.scrollTo({top: 0, behavior:"smooth"});
+    const voltarAoTopo = document.querySelector("#back-home a");
+    voltarAoTopo.addEventListener("click", (event) =>{
+
+        // Esse método serve para cancelar a ação padrão que o navegador executa em um determinado evendo  quanto é disparado. Aqui, estamos impedindo que o navegador execute o <a>, ou seja, muda de página. Pois isso, aqui, atrapalha na navegação entre as páginas.
+        event.preventDefault();
+        window.scrollTo({top: 0, behavior:"smooth"});
+
+    })
 };
 
 // Chamando a função

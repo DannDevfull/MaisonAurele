@@ -166,7 +166,7 @@ body{
         & section{
             width: 75%;
             margin: auto;
-            margin-top: 245px;
+            margin-top: 190px;
         }
         & section .heading{
                     display: flex;
@@ -326,16 +326,71 @@ body{
          
            
         }
+        & .about .about-details{
+            display: flex;
+            flex-direction: row;
+            margin-top:20%;
+            gap: 30px;
+
+            & #details{
+                font-size: 1.1rem;
+                font-weight: 200;
+                letter-spacing: 8%;
+                line-height: 48px;
+
+                & span{
+                    font-weight: 700;
+                }
+            }
+
+            & .cards-article{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 50%;
+
+                 & article img{
+                    width: 23rem;
+                    height: auto;
+                    border-radius:2rem ;
+                 }
+            }
+        }
 
         & .brevecardapio {
             
+            .categoria{
+                    display: flex;
+                    justify-content: start;
+                    text-align: center;
+                    margin-top: 8rem;
+                
+                    & p{
+                        display: flex;
+                        justify-content: center;
+                        width: 50%;
+                        border: 0.1rem solid var(--Destaque);
+                        border-radius: 1rem;
+                        padding: 0.6rem;
+                        transition: 0.5s ease;
+                    }
+                    & p:hover{
+                        box-shadow: 0 0 25px var(--Destaque);
+                        background-color: var(--Destaque);
+                        font-weight: 700;
+                        transform: translateY(-10px);
+                    }
+            }
+
+
             & .fourcards{
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 margin-top: 100px;
                 column-gap: 200px;
                 row-gap: 70px;
-            
+                
+
                 & .cards img{
                     width: 100%; 
                     border-radius: 30px;
@@ -355,6 +410,19 @@ body{
 
                 & p{
                     font-weight: 300;
+                }
+
+                & .cards{
+                    transition: 0.5s ease;
+                }
+
+                & .cards:hover{
+                    cursor: cell;
+                    transform: translateY(-10px);
+
+                    & #card-title, p{
+                        font-weight: 700;
+                    }
                 }
 
 
@@ -396,6 +464,40 @@ body{
             }
         }
 
+        & .gallery-page .gallery-grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: min-content;
+            row-gap: 1.5rem;
+           
+
+            &  .gallery-card{
+                width: 80%;
+                justify-self: center ;
+                align-self: center;
+                border-radius: 1.5rem;
+                transition: 0.4s ease;
+                cursor: cell;
+            }
+
+            & .gallery-card:hover{
+                transform: translateY(-10px);
+                border: 0.2rem solid var(--Cor-secundaria);
+                box-shadow: 0 0 25px var(--Cor-secundaria);
+            }
+
+
+            &  .gallery-card img{
+                display: block;
+                width: 100%;
+                height: auto;
+                border-radius: 1.5rem;
+                 object-fit: cover;
+
+            }
+        }
+        
+
     }
 
     & footer{
@@ -404,7 +506,7 @@ body{
         justify-content: space-between;
         width: 90%;
         margin: auto;
-        margin-top: 300px;
+        margin-top: 150px;
         border-top: 1px solid var(--Cor-primaria);
        
         
@@ -586,6 +688,34 @@ body{
         }
    }
 
+   .about #details-article{
+        display: flex;
+        flex-direction: column;
+   }
+
+   .about #details-article #details{
+    font-size: 0.9rem;
+    text-align: justify;
+   }
+
+   .about #details-article .cards-article{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 60rem;
+        align-items: center;
+       justify-content: space-around;
+
+            & .ambientacao img{
+                width: 22rem;
+                height: auto;
+            }
+   }
+
+   
+
+
+
    .destaque #column .txt4 .row #Us{
     font-size: 12px;     
    }
@@ -731,6 +861,32 @@ body{
         }
     }
 
+    .about #details-article{
+        display: flex;
+        flex-direction: column;
+   }
+
+   .about #details-article #details{
+    font-size: 0.7rem;
+    text-align: justify;
+    letter-spacing: 6%;
+   }
+
+   .about #details-article .cards-article{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 60rem;
+        align-items: center;
+       justify-content: space-around;
+
+            & .ambientacao img{
+                width: 18rem;
+                height: auto;
+            }
+   }
+
+
      .hero::before{
         font-size: 12px;
     }
@@ -772,6 +928,10 @@ body{
             font-size: 8px;
             font-weight: 300;
         }
+    }
+
+    .brevecardapio .categoria{
+        font-size: 0.8rem;
     }
     .brevecardapio .link #linkMenu{
         padding: 10px 10px;
@@ -916,8 +1076,37 @@ body{
         }
     }
 
+    .about #details-article{
+        display: flex;
+        flex-direction: column;
+   }
+
+   .about #details-article #details{
+    font-size: 0.6rem;
+    text-align: justify;
+    letter-spacing: 4%;
+    line-height: 36px;
+   }
+
+   .about #details-article .cards-article{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 60rem;
+        align-items: center;
+       justify-content: space-around;
+
+            & .ambientacao img{
+                width: 14rem;
+                height: auto;
+            }
+   }
+
     .brevecardapio .cardapio .titleN2{
         font-size: 20px;
+    }
+    .brevecardapio .categoria{
+        font-size: 0.6rem;
     }
 
     footer #copyR p{
@@ -1135,19 +1324,45 @@ body{
     }
 
     .about .descrição #desc #p-desc {
-        font-size: 10px;
+        font-size: 0.4rem;
         line-height: 22px;
         text-align: justify;
     }
 
     .about .descrição #ImgTeam {
-        width: 75%;
+        width: 60%;
     }
 
     .about .descrição #ImgTeam img {
         width: 100%;
         border-radius: 18px;
     }
+
+    .about #details-article{
+        display: flex;
+        flex-direction: column;
+   }
+
+   .about #details-article #details{
+    font-size: 0.4rem;
+    text-align: justify;
+    letter-spacing: 2%;
+    line-height: 30px;
+   }
+
+   .about #details-article .cards-article{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 60rem;
+        align-items: center;
+       justify-content: space-evenly;
+
+            & .ambientacao img{
+                width: 10rem;
+                height: auto;
+            }
+   }
 
     /* --- CARDÁPIO --- */
     .brevecardapio .cardapio .titleN2 {
@@ -1184,6 +1399,10 @@ body{
         text-align: center;
     }
 
+    .brevecardapio .categoria{
+        font-size: 0.4rem;
+    }
+
     .brevecardapio #ItensCard .cards .t-descrição {
         font-size: 8px;
         line-height: 18px;
@@ -1217,7 +1436,6 @@ body{
     /* --- RODAPÉ --- */
     footer {
         width: 90%;
-        margin-top: 70px;
         padding: 14px 0;
         display: flex;
         flex-direction: column;
