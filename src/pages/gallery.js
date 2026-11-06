@@ -31,7 +31,7 @@ export function renderGalleryPage(){
                     <p>Um pouco dos sabores e do ambiente da Maison Aurèle</p>
                 </div>
     
-                <div class="gallery-grid">${images}</div>
+                <div class="gallery-grid" id="gallery">${images}</div>
             </section>
     
         `;

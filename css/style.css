@@ -215,14 +215,28 @@ body{
                     
                     & div img{
                         width: 100%;
-                        border-radius: 30px;
+                        border-radius: 1.4rem;
+                    }
+
+                    & .img-card-food{
+                       cursor: pointer;
+                       transition: 0.5s ease;
+                    }
+                    & .img-card-food:hover{
+                        transform: translateY(-10px);
+
+                        & img:hover{
+                            box-shadow: 0 0 25px var(--Cor-secundaria);
+
+                            border: 0.1rem solid var(--Cor-secundaria);
+                        }
                     }
 
 
                     & #img3 h3{
                         font-family: var(--Font-cormorant);
                         color: var(--Cor-primaria);
-                        font-size: 32px;
+                        font-size: 2rem;
                         margin-bottom: 22px;
                        
                     }
@@ -414,11 +428,16 @@ body{
 
                 & .cards{
                     transition: 0.5s ease;
+                     cursor: cell;
                 }
 
                 & .cards:hover{
-                    cursor: cell;
                     transform: translateY(-10px);
+
+                    &  img:hover{
+                        box-shadow:0 0 25px var(--Cor-secundaria) ;
+                        border: 0.1rem solid var(--Cor-secundaria);
+                    }
 
                     & #card-title, p{
                         font-weight: 700;
@@ -475,7 +494,7 @@ body{
                 width: 80%;
                 justify-self: center ;
                 align-self: center;
-                border-radius: 1.5rem;
+                border-radius: 0.6rem;
                 transition: 0.4s ease;
                 cursor: cell;
             }
@@ -491,10 +510,91 @@ body{
                 display: block;
                 width: 100%;
                 height: auto;
-                border-radius: 1.5rem;
+                border-radius: 0.6rem;
                  object-fit: cover;
 
             }
+        }
+
+        & .contacts-page .contact-note{
+            display: flex;
+            flex-direction: column;
+
+                & .Icons-contacts{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 4rem;
+                    margin-bottom: 3.4rem;
+                    transition: 0.3s ease;
+                }
+
+                /* Selecionado os dois H3 desta seção */
+                & .location{
+                    font-family: var(--Font-cormorant);
+                    font-size: 2rem;
+                    font-weight: bold;
+                    margin-bottom: 2rem;
+                    transition: 0.3s ease;
+                }
+
+                & .hours ul li{
+                    margin-bottom: 2rem;
+                    transition: 0.3s ease;
+                }
+
+                & .addresses{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4rem;
+
+                    
+
+                        & .place{
+                            display: flex;
+                            width: 100%;
+                            font-size: 0.8rem;
+                        }
+
+                        & .numbers{
+                           align-content: center;
+                           font-size: 0.8rem;
+                            
+                           & div{
+                            margin-bottom: 2rem;
+                            transition: 0.5s ease;
+                           }
+                           & div:hover{
+                                transform: translateY(-10px);
+                                font-weight: 700;   
+                           }
+                        }
+
+                         & a{
+                            color: var(--Cor-secundaria);
+                            cursor: pointer;       
+                         }
+
+                        & .social-icons{
+                           display: flex;
+                           flex-direction: row;
+                           justify-content: space-between;
+                           gap: 2rem;
+                        }
+
+                        & .social-icons div{
+                            cursor: pointer;
+                            transition: 0.5s ease;
+                        }
+
+                        & .social-icons div:hover{
+                            transform: translateY(-10px);
+                            font-weight: 700;
+                            cursor: pointer;
+                        }
+                }
+            
+                
         }
         
 
@@ -524,7 +624,10 @@ body{
                     width: 100%;
 
                     & .container{
-                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items:center ;
+                        width: 50%;
                     }
 
                      & img{
@@ -1109,6 +1212,12 @@ body{
         font-size: 0.6rem;
     }
 
+
+    .gallery-page #gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     footer #copyR p{
         font-size: 6px;
     }
@@ -1431,6 +1540,12 @@ body{
 
     .brevecardapio .link #linkMenu a {
         font-size: 10px;
+    }
+
+      .gallery-page #gallery{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 4rem;
     }
 
     /* --- RODAPÉ --- */

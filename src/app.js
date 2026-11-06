@@ -2,6 +2,7 @@ import { renderHomePage } from "./pages/home.js";
 import { renderAboutPage } from "./pages/about.js";
 import { renderMenuPage } from "./pages/menu.js";
 import { renderGalleryPage } from "./pages/gallery.js";
+import { renderContactsPage } from "./pages/contacts.js";
 
 const app = document.querySelector('#app');
 
@@ -11,6 +12,7 @@ const pages = {
     about: { title: "Quem Somos", render: renderAboutPage},
     menu: { title: "Cardápio", render:renderMenuPage},
     gallery: { title: "Galeria", render:renderGalleryPage},
+    contacts: { title: "Contatos", render:renderContactsPage},
 };
 
 function getCurrentRoute(){

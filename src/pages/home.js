@@ -11,18 +11,18 @@ export function renderHomePage(){
                 </div>
 
                 <div class="cards path" id="column">
-                    <div id="img1">
+                    <div id="img1" class="img-card-food">
                         <img src="IMGs/fundo-principal.webp" alt="Imagens de prato com carne">
                     </div>
 
-                    <div id="img2">
+                    <div id="img2" class="img-card-food">
                         <img src="IMGs/aperitivo.webp" alt="Imagem de aperitivos ppara degustar">
                     </div>
                     
-                        <div id="img3" class="div" >
-                            <h3 id="titleN3">Ambientação</h3>
-                            <img src="IMGs/plano-fundo.webp" alt="Ambientação interna de uma restaurante">
-                        </div>
+                    <div id="img3" class="img-card-food" >
+                        <h3 id="titleN3">Ambientação</h3>
+                        <img src="IMGs/plano-fundo.webp" alt="Ambientação interna de uma restaurante">
+                    </div>
 
                         <article class="txt4">
                             <div class="txt4-content">
